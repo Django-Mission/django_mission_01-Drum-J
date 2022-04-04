@@ -5,5 +5,6 @@ def lotto(reqeust) :
 
     Number = random.sample(range(1,46),6)
     Lotto_no = Number
+    Lotto_no.sort()
 
     return render(reqeust,'lotto.html',{'Lotto_no' : Lotto_no})
